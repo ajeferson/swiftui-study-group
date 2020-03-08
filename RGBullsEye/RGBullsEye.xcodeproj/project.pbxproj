@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD908357241567A600186F0E /* KeyPoints.md in Resources */ = {isa = PBXBuildFile; fileRef = BD908356241567A600186F0E /* KeyPoints.md */; };
 		BDCC1A8024154FA300B75DC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCC1A7F24154FA300B75DC2 /* AppDelegate.swift */; };
 		BDCC1A8224154FA300B75DC2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCC1A8124154FA300B75DC2 /* SceneDelegate.swift */; };
 		BDCC1A8424154FA300B75DC2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCC1A8324154FA300B75DC2 /* ContentView.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BD908356241567A600186F0E /* KeyPoints.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = KeyPoints.md; sourceTree = "<group>"; };
 		BDCC1A7C24154FA300B75DC2 /* RGBullsEye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RGBullsEye.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDCC1A7F24154FA300B75DC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BDCC1A8124154FA300B75DC2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				BDCC1A8A24154FA400B75DC2 /* LaunchScreen.storyboard */,
 				BDCC1A8D24154FA400B75DC2 /* Info.plist */,
 				BDCC1A8724154FA400B75DC2 /* Preview Content */,
+				BD908356241567A600186F0E /* KeyPoints.md */,
 			);
 			path = RGBullsEye;
 			sourceTree = "<group>";
@@ -134,6 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDCC1A8C24154FA400B75DC2 /* LaunchScreen.storyboard in Resources */,
+				BD908357241567A600186F0E /* KeyPoints.md in Resources */,
 				BDCC1A8924154FA400B75DC2 /* Preview Assets.xcassets in Resources */,
 				BDCC1A8624154FA400B75DC2 /* Assets.xcassets in Resources */,
 			);
