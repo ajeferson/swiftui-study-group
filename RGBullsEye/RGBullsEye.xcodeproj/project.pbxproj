@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BD908357241567A600186F0E /* KeyPoints.md in Resources */ = {isa = PBXBuildFile; fileRef = BD908356241567A600186F0E /* KeyPoints.md */; };
+		BDAB3F6F2427EDBE003EF7BE /* TimeCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAB3F6E2427EDBE003EF7BE /* TimeCounter.swift */; };
 		BDCC1A8024154FA300B75DC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCC1A7F24154FA300B75DC2 /* AppDelegate.swift */; };
 		BDCC1A8224154FA300B75DC2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCC1A8124154FA300B75DC2 /* SceneDelegate.swift */; };
 		BDCC1A8424154FA300B75DC2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCC1A8324154FA300B75DC2 /* ContentView.swift */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		BD908356241567A600186F0E /* KeyPoints.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = KeyPoints.md; sourceTree = "<group>"; };
+		BDAB3F6E2427EDBE003EF7BE /* TimeCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCounter.swift; sourceTree = "<group>"; };
 		BDCC1A7C24154FA300B75DC2 /* RGBullsEye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RGBullsEye.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDCC1A7F24154FA300B75DC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BDCC1A8124154FA300B75DC2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				BDCC1A8D24154FA400B75DC2 /* Info.plist */,
 				BDCC1A8724154FA400B75DC2 /* Preview Content */,
 				BD908356241567A600186F0E /* KeyPoints.md */,
+				BDAB3F6E2427EDBE003EF7BE /* TimeCounter.swift */,
 			);
 			path = RGBullsEye;
 			sourceTree = "<group>";
@@ -153,6 +156,7 @@
 				BDCC1A8024154FA300B75DC2 /* AppDelegate.swift in Sources */,
 				BDCC1A8224154FA300B75DC2 /* SceneDelegate.swift in Sources */,
 				BDCC1A8424154FA300B75DC2 /* ContentView.swift in Sources */,
+				BDAB3F6F2427EDBE003EF7BE /* TimeCounter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

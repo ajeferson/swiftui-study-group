@@ -19,33 +19,48 @@ struct ContentView: View {
 
     @State private var showAlert = false
 
+    @ObservedObject var timer = TimeCounter()
+
     var body: some View {
         VStack {
             HStack {
                 VStack {
                     Color(red: rTarget, green: gTarget, blue: bTarget)
-                    Text("Match this color")
+                    self.showAlert ? Text("R: \(Int(rTarget * 255.0)) G: \(Int(gTarget * 255.0)) B: \(Int(bTarget * 255.0))") : Text("Match this color")
                 }
                 VStack {
-                    Color(red: rGuess, green: gGuess, blue: bGuess)
+                    ZStack(alignment: .center) {
+                        Color(red: rGuess, green: gGuess, blue: bGuess)
+                        Text(String(timer.counter))
+                            .padding(.all, 5)
+                            .background(Color.white)
+                            .mask(Circle())
+                            .foregroundColor(.black)
+                    }
                     Text("R: \(Int(rGuess * 255.0)) G: \(Int(gGuess * 255.0)) B: \(Int(bGuess * 255.0))")
                 }
             }
-            Button(action: { self.showAlert = true }) {
+            Button(action: {
+                self.showAlert = true
+                self.timer.killTimer()
+            }) {
                 Text(/*@START_MENU_TOKEN@*/"Hit me!"/*@END_MENU_TOKEN@*/)
             }
             .padding(.vertical)
-            ColorSlider(value: $rGuess, textColor: .red)
-            ColorSlider(value: $gGuess, textColor: .green)
-            ColorSlider(value: $bGuess, textColor: .blue)
+            .alert(isPresented: $showAlert) {
+                Alert(
+                    title: Text("Your score"),
+                    message: Text(String(computeScore()))
+                )
+            }
+            VStack {
+                ColorSlider(value: $rGuess, textColor: .red)
+                ColorSlider(value: $gGuess, textColor: .green)
+                ColorSlider(value: $bGuess, textColor: .blue)
+            }
+            .padding(.horizontal)
         }
         .padding(.vertical)
-        .alert(isPresented: $showAlert) {
-            Alert(
-                title: Text("Your score"),
-                message: Text(String(computeScore()))
-            )
-        }
     }
 
     func computeScore() -> Int {
@@ -67,10 +82,11 @@ struct ColorSlider: View {
             Text("0")
                 .foregroundColor(textColor)
             Slider(value: $value)
+                .background(textColor)
+                .cornerRadius(10)
             Text("255")
                 .foregroundColor(textColor)
         }
-        .padding(.horizontal)
     }
 }
 
@@ -79,5 +95,6 @@ struct ContentView_Previews: PreviewProvider {
         // Xcode doesn't have a landscape preview
         ContentView(rGuess: 0.5, gGuess: 0.5, bGuess: 0.5)
             .previewLayout(.fixed(width: 568, height: 320))
+//            .environment(\.colorScheme, .dark)
     }
 }

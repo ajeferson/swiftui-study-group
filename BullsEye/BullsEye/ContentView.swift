@@ -23,6 +23,8 @@ struct ContentView: View {
             HStack {
                 Text("0")
                 Slider(value: $guess)
+                    .background(Color.blue)
+                    .opacity((100 - Double(score)) / 100)
                 Text("100")
             }
             Spacer()
