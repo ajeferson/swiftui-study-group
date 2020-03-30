@@ -2,6 +2,15 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/alanpaiva/projects/SwiftUIStudy/BullsEye4Challenge/BullsEye4Challenge.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/alanpaiva/projects/SwiftUIStudy/RGBullsEye4/RGBullsEye4.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/alanpaiva/projects/SwiftUIStudy/BullsEye4/BullsEye4.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:BullsEye/BullsEye.xcodeproj">
    </FileRef>
    <FileRef
